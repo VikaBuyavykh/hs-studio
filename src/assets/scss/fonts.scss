@@ -1,0 +1,85 @@
+@use 'mixins' as *;
+@use 'extensions' as *;
+@use 'variables' as *;
+
+@font-face {
+  font-family: 'Forum-Regular';
+  src: url('../fonts/Forum-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT-Book';
+  src: url('../fonts/FuturaPT-Book.woff') format('woff');
+  src: url('../fonts/FuturaPT-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT-Light';
+  src: url('../fonts/FuturaPT-Light.woff') format('woff');
+  src: url('../fonts/FuturaPT-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+//заголовки большие
+
+@mixin h1($color, $text-align) {
+  font-family: 'Forum-Regular', 'Garamond', 'Georgia', serif;
+  @include text(64px, 70.66px, $color, $text-align);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+@mixin h2($color, $text-align) {
+  font-family: 'Forum-Regular', 'Garamond', 'Georgia', serif;
+  @include text(48px, 52.99px, $color, $text-align);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+//заголовки мелкие
+
+@mixin p1($color, $text-align) {
+  font-family: 'FuturaPT-Book', 'Arial', 'Helvetica', sans-serif;
+  @include text(18px, 23.08px, $color, $text-align);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin p2($color, $text-align) {
+  font-family: 'FuturaPT-Book', 'Arial', 'Helvetica', sans-serif;
+  @include text(16px, 20.51px, $color, $text-align);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin p3($color, $text-align) {
+  font-family: 'FuturaPT-Book', 'Arial', 'Helvetica', sans-serif;
+  @include text(14px, 17.95px, $color, $text-align);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+//текст
+
+@mixin t1($color, $text-align) {
+  font-family: 'FuturaPT-Light', 'Arial', 'Helvetica', sans-serif;
+  @include text(24px, 30.77px, $color, $text-align);
+  font-weight: 300;
+}
+
+@mixin t2($color, $text-align) {
+  font-family: 'FuturaPT-Light', 'Arial', 'Helvetica', sans-serif;
+  @include text(18px, 23.08px, $color, $text-align);
+  font-weight: 300;
+}

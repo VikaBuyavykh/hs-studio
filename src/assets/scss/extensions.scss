@@ -1,0 +1,17 @@
+%pic {
+  object-fit: cover;
+  object-position: center;
+}
+
+%bgi {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+%resetInputsAndBtns {
+  outline: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
