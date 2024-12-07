@@ -35,6 +35,7 @@
   @include text(64px, 70.66px, $color, $text-align);
   letter-spacing: 0.03em;
   font-weight: 400;
+  margin: 0;
 }
 
 @mixin h2($color, $text-align) {
@@ -42,6 +43,7 @@
   @include text(48px, 52.99px, $color, $text-align);
   letter-spacing: 0.03em;
   font-weight: 400;
+  margin: 0;
 }
 
 //заголовки мелкие
@@ -52,6 +54,7 @@
   letter-spacing: 0.05em;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
 }
 
 @mixin p2($color, $text-align) {
@@ -60,6 +63,7 @@
   letter-spacing: 0.05em;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
 }
 
 @mixin p3($color, $text-align) {
@@ -68,6 +72,7 @@
   letter-spacing: 0.05em;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
 }
 
 //текст
@@ -76,10 +81,12 @@
   font-family: 'FuturaPT-Light', 'Arial', 'Helvetica', sans-serif;
   @include text(24px, 30.77px, $color, $text-align);
   font-weight: 300;
+  margin: 0;
 }
 
 @mixin t2($color, $text-align) {
   font-family: 'FuturaPT-Light', 'Arial', 'Helvetica', sans-serif;
   @include text(18px, 23.08px, $color, $text-align);
   font-weight: 300;
+  margin: 0;
 }

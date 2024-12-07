@@ -1,3 +1,6 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
 %pic {
   object-fit: cover;
   object-position: center;
@@ -14,4 +17,14 @@
   border: none;
   border-radius: 0;
   background-color: transparent;
+}
+
+%sizing {
+  @include size(100%, auto);
+  max-width: $xl-screen-size;
+  margin-inline: auto;
+
+  @include media_xxl {
+    width: 90%;
+  }
 }
