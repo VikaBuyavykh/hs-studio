@@ -2,23 +2,27 @@
 const links = [
   {
     href: '#cover',
-    name: 'Главная',
+    name: 'Старт',
   },
   {
-    href: '#advantages',
-    name: 'Преимущества',
+    href: '#projects',
+    name: 'Проекты',
   },
   {
-    href: '#',
-    name: 'Портфолио',
-  },
-  {
-    href: '#',
+    href: '#stages',
     name: 'Этапы',
   },
   {
-    href: '#',
+    href: '#pricing',
+    name: 'Тарифы',
+  },
+  {
+    href: '#team',
     name: 'Команда',
+  },
+  {
+    href: '#form',
+    name: 'Заявка',
   },
   {
     href: '#footer',
@@ -34,9 +38,13 @@ const links = [
       <p class="header--logo-text">hs-studio</p>
     </div>
     <nav class="header--nav">
-      <a v-for="link in links" :key="link.name" :href="link.href" class="header--nav-link">{{
-        link.name
-      }}</a>
+      <RouterLink
+        v-for="link in links"
+        :key="link.name"
+        :to="{ name: 'home', hash: `${link.href}` }"
+        class="header--nav-link"
+        >{{ link.name }}</RouterLink
+      >
     </nav>
   </header>
 </template>

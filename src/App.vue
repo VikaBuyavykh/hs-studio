@@ -1,15 +1,12 @@
 <script setup>
 import AppHeader from '@/components/AppHeader.vue'
-import AppCover from '@/components/AppCover.vue'
-import AppAdvantages from '@/components/AppAdvantages.vue'
 import AppFooter from '@/components/AppFooter.vue'
 </script>
 
 <template>
   <div class="page">
     <AppHeader />
-    <AppCover />
-    <AppAdvantages />
+    <RouterView />
     <AppFooter />
   </div>
 </template>

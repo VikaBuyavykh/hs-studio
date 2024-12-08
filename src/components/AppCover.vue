@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+import AppButton from '@/components/UI/AppButton.vue'
+
+function scrollToForm() {
+  console.log('kkk')
+
+  document.querySelector('#form').scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+</script>
 
 <template>
   <section class="cover" id="cover">
@@ -8,7 +16,7 @@
           <p class="cover--desc">Hs-Studio</p>
           <h1 class="cover--title">Студия хоумстейджинга Надежды Буявых</h1>
           <span class="cover--line"></span>
-          <button class="button">Оставить заявку</button>
+          <AppButton @click="scrollToForm">Оставить заявку</AppButton>
         </div>
       </div>
     </div>
@@ -54,20 +62,6 @@
     margin-bottom: 30px;
     @include size(40%, 1px);
     background-color: $primary2;
-  }
-}
-
-.button {
-  @extend %resetInputsAndBtns;
-  padding: 8px 32px;
-  border-radius: 30px;
-  background-color: $primary2;
-  @include t2(white, center);
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: $primary1;
-    cursor: pointer;
   }
 }
 </style>
