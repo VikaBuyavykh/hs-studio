@@ -5,7 +5,9 @@ import AppButton from '@/components/UI/AppButton.vue'
 <template>
   <section class="form" id="form">
     <div class="form--content">
-      <img class="form--image" alt="Фото интерьера" src="/Form.jpg" />
+      <div class="form--image">
+        <img alt="Фото интерьера" src="/Form.jpg" />
+      </div>
       <form class="form--form" id="request">
         <h2 class="form--form-title">Оставить заявку</h2>
         <label class="form--label">
@@ -38,7 +40,7 @@ import AppButton from '@/components/UI/AppButton.vue'
             placeholder="Введите свой номер телефона"
           />
         </label>
-        <AppButton class="form--button">Отправить</AppButton>
+        <AppButton class="form--button" isThemeDark>Отправить</AppButton>
       </form>
     </div>
   </section>
@@ -64,15 +66,20 @@ import AppButton from '@/components/UI/AppButton.vue'
 
   &--image {
     @include size(100%, 100%);
-    @extend %pic;
+    position: relative;
+
+    img {
+      position: absolute;
+      @include size(100%, 100%);
+      @extend %pic;
+    }
   }
 
   &--form {
     @include size(80%, auto);
     padding: 60px 10% 70px;
     @include flex(column, start, start, 24px);
-    //background-color: rgba($primary4, 0.8);
-    background-image: url('/back.jpg');
+    background-color: $primary4;
     @extend %bgi;
 
     &-title {

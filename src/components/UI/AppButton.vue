@@ -30,14 +30,11 @@ defineProps({
 
   &:hover {
     background-color: $primary4;
-    color: $primary2;
   }
 
   &-dark {
-    background-color: $primary1;
-    @include t2($primary2, center);
-
     &:hover {
+      color: $primary2;
       background-color: $primary3;
     }
   }

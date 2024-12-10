@@ -41,7 +41,7 @@ const advantages = [
 
   &--content {
     @extend %sizing;
-    padding-block: 20px 60px;
+    padding-block: 60px;
     @include flex(column, start, stretch, 24px);
   }
 

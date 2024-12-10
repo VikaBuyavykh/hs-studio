@@ -38,7 +38,7 @@ import { team } from '@/utils/team'
   &--content {
     @extend %sizing;
     padding-block: 60px;
-    @include flex(column, start, stretch, 24px);
+    @include flex(column, start, stretch, 48px);
   }
 
   &--title {

@@ -36,8 +36,12 @@ function scrollToForm() {
 
   &--overlay {
     @include size(100%, 100%);
-    padding-block: 16%;
-    background-image: linear-gradient(rgba($primary3, 0) 50%, rgba($primary3, 1));
+    padding-block: 16% 20%;
+    background-image: linear-gradient(
+      rgba($primary3, 0) 60%,
+      rgba($primary3, 0.9) 80%,
+      rgba($primary3, 1)
+    );
   }
 
   &--content {

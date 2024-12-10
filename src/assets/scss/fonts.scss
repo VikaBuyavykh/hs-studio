@@ -90,3 +90,10 @@
   font-weight: 300;
   margin: 0;
 }
+
+@mixin number($color, $text-align) {
+  font-family: 'FuturaPT-Light', 'Arial', 'Helvetica', sans-serif;
+  @include text(180px, 230px, $color, $text-align);
+  font-weight: 700;
+  margin: 0;
+}
